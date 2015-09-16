@@ -1,0 +1,12 @@
+{
+  "description": "das goht ab.",
+  "meta": {
+    "title": "intesso",
+    "description": "intesso | engineering | full stack web development | system integration | node.js"
+  },
+  "locale": "de",
+  "path": "home",
+  "section1": "<h2>fokus</h2>\n\n<p>Wir entwerfen und entwickeln Individual Software und Web&nbsp;Applikationen. intesso ist begeistert von Open Source Anwendungen und setzt leidenschaftlich gerne Technologien mit offenen Standards ein. Wir lieben es auch neue Dinge zu kreieren; hier eine Kostprobe, damit Sie besser verstehen k&ouml;nnen, worin wir gut sind:</p>\n\n<p>&nbsp;</p>\n\n<ul style=\"list-style-type:none\">\n\t<li>Entwicklung von Web&nbsp;Applikationen (node.js, JavaScript, Java,&nbsp;HTML, CSS)</li>\n\t<li>Realtime Systeme</li>\n\t<li>System Integrationen</li>\n\t<li>Software Architektur und Design</li>\n\t<li>Mobile, UI Design und Usability Engineering</li>\n\t<li>Agile/Iterative Software-Entwicklung</li>\n</ul>\n\n<p>&nbsp;</p>\n\n<p>Unser Ziel ist es, passende L&ouml;sungen f&uuml;r komplexe Problemstellungen zu finden und umzusetzen.</p>\n",
+  "section2": "<h2>unternehmen</h2>\n\n<p>Wir sind ein Software Unternehmen, das Individual Software- und Web-Entwicklung betreibt. Dazu geh&ouml;rt Entwicklung wie auch Beratung unsere&nbsp;Kunden in diesem Gebiet. Unsere Mitarbeiter bestehen aus einer multinationalen Gruppe von Experten auf ihrem jeweiligen Fachgebiet.</p>\n\n<p>Obwohl wir unseren Hauptsitz in der Schweiz haben, kann es gut sein, dass Ihr Web-Design am Kap der Guten Hoffnung entsteht oder Ihre Webapplikation in Australien programmiert wird, w&auml;hrend dem Sie von Ihrem jeweiligen Standort aus mit unserem Projektmanager in der Schweiz kommunizieren.</p>\n\n<p>Wir setzen uns f&uuml;r eine hohe Qualit&auml;t unserer Produkte ein und engagieren darum Experten, die dieser Anforderung gerecht werden, egal auf welchem Kontinent Sie Zuhause sind.</p>\n",
+  "section3": "<h2>kontakt</h2>\n\n<p>Wir freuen uns, von Ihnen zu h&ouml;ren, egal, ob Sie Fragen haben, mit uns zusammen arbeiten oder einfach mehr &uuml;ber uns erfahren m&ouml;chten.</p>\n\n<p><a href=\"#\">Kontakt Anfrage</a></p>\n"
+}

@@ -1,0 +1,26 @@
+{
+  "teaser": {
+    "src": "/files/projects/glint/glintcms-small.png",
+    "alt": "",
+    "style": "",
+    "class": ""
+  },
+  "banner": {
+    "src": "/files/projects/glint/glintcms.png",
+    "alt": "the invisible content management system (cms)",
+    "style": "width: 100%; margin: auto; display: block;",
+    "class": ""
+  },
+  "title": "GlintCMS",
+  "short": "The invisible Content Management System | an intesso open source project",
+  "text": "<p>&nbsp;</p>\n\n<p>The Motivation to build GlintCMS was the frustration we had while developing Real Time Systems as well as more &quot;Static&quot; Platforms, that need to be rendered on the server side for Search Engine Optimization (SEO).</p>\n\n<p>&nbsp;</p>\n\n<p>We switched between different technologies and monolyts, until we decided to build small modules, that we can reuse for web applications as well as for web sites.</p>\n\n<p>&nbsp;</p>\n\n<p>It turned into a modular and flexible solution, that leaves you enough room for custom solutions&nbsp;for small to medium Web Sites.</p>\n\n<p>It basically has no backend, but intuitive inline editing. It can run stuff on the server as well as in the browser.</p>\n\n<p>&nbsp;</p>\n\n<h2>Use Cases</h2>\n\n<p>- Web Application (Single Page Applications)</p>\n\n<p>- Web Sites / Platforms (Heavy server side rendering)</p>\n\n<p>&nbsp;</p>\n\n<h2>Development Principle</h2>\n\n<p>GlintCMS follows the GlintAPP principle:&nbsp;<a href=\"https://github.com/glintapp/glintapp\">github.com/glintapp/glintapp</a></p>\n\n<p>&nbsp;</p>\n\n<h2>Technology</h2>\n\n<p>- Server: node.js / express or connect</p>\n\n<p>- Browser: huge lib support with&nbsp;browserify</p>\n\n<p>- Extendability: with &quot;glint-*&quot; npm modules</p>\n\n<p>- Data Store: supports almost everything with mimimal effort</p>\n\n<p>- Templating: supports everything that renders in node.js as well as in the browser</p>\n\n<p>&nbsp;</p>\n\n<p><a href=\"http://www.glintcms.com\">www.glintcms.com</a></p>\n\n<p><a href=\"https://github.com/glintcms\">www.github.com/glintcms</a></p>\n\n<p>&nbsp;</p>\n",
+  "meta": {
+    "title": "GlintCMS",
+    "description": "the invisible cms"
+  },
+  "updatedAt": "2015-09-15T19:08:09.987Z",
+  "createdAt": "2015-09-02T20:06:36.281Z",
+  "id": "en-glintcms",
+  "locale": "en",
+  "path": "glintcms"
+}

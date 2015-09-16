@@ -1,0 +1,26 @@
+{
+  "teaser": {
+    "src": "/files/projects/traffic-control/traffic-control-small.png",
+    "alt": "",
+    "style": "",
+    "class": ""
+  },
+  "banner": {
+    "src": "/files/projects/traffic-control/traffic-control.png",
+    "alt": "",
+    "style": "width: 100%; margin: auto; display: block;",
+    "class": ""
+  },
+  "text": "<p>We build custom real time user interfaces, and system integration with management systems and low level hardware access.</p>\n\n<p>The Communication with the Server and the Traffic Control Systems is incredibly fast.</p>\n\n<p>&nbsp;</p>\n\n<h2>Features</h2>\n\n<p>- pure HTML5 solution&nbsp;/ no Plugins required!</p>\n\n<p>- Multi User Editing with Real Time Updates</p>\n\n<p>- Access Control</p>\n\n<p>- Scaleable</p>\n\n<p>- Reports</p>\n\n<p>- SVG Vector Graphics</p>\n\n<p>- Zoom /&nbsp;Pan</p>\n\n<p>- Image Editor&nbsp;</p>\n\n<p>- Build Process Integration</p>\n\n<p>- High performant Cache with real time invalidation</p>\n\n<p>- WebSockets with Fallback</p>\n\n<p>- Custom system Integration</p>\n\n<p>- Open RESTful&nbsp;Interfaces</p>\n\n<p>&nbsp;</p>\n\n<h2>Technology</h2>\n\n<p>- node.js</p>\n\n<p>- expressjs</p>\n\n<p>- redis</p>\n\n<p>- socket.io</p>\n\n<p>- ...</p>\n",
+  "meta": {
+    "title": "Traffic Control System",
+    "description": "Real Time System | Integration | User Interface"
+  },
+  "updatedAt": "2015-09-15T19:10:31.403Z",
+  "createdAt": "2015-09-02T20:29:57.837Z",
+  "id": "en-traffic-control",
+  "locale": "en",
+  "path": "traffic-control",
+  "title": "Traffic Control&nbsp;<span style=\"letter-spacing: 0.2em; line-height: 1.1;\">System</span>",
+  "short": "Real Time System | Integration | User Interface"
+}

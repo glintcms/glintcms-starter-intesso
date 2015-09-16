@@ -1,0 +1,12 @@
+{
+  "description": "das goht ab.",
+  "meta": {
+    "title": "intesso",
+    "description": "intesso | engineering | full stack web development | system integration | node.js"
+  },
+  "locale": "en",
+  "path": "home",
+  "section1": "<h2>services</h2>\n\n<p>We design and develop software and web applications. intesso loves open source and is passionate about using standards driven technologies. We also love to build new things. Here&rsquo;s a list to help you understand what we are best at:</p>\n\n<p>&nbsp;</p>\n\n<ul style=\"list-style-type:none\">\n\t<li>Web applications development&nbsp;(node.js, JavaScript, Java,&nbsp;HTML, CSS)</li>\n\t<li>Real Time Systems development</li>\n\t<li>System Integration</li>\n\t<li>Software Architecture and Design</li>\n\t<li>Web, Mobile &amp; UI Design &amp;&nbsp;User Experience</li>\n\t<li>Agile/Iterative software development</li>\n</ul>\n\n<p>&nbsp;</p>\n\n<p>It is our strenght to cut down complex problems into manageable pieces and turn them into adequate solutions.</p>\n",
+  "section2": "<h2>about</h2>\n\n<p>We are a software and web development company made up of a multi-national group of experts in their respective fields.</p>\n\n<p>Although we are a Swiss company by origin, web design might be done on the tip of Africa and Java programming in Australia while you sit back and speak to one of our Agile project managers in Switzerland.</p>\n\n<p>We believe in quality and working with people who produce it, no matter where they may be.</p>\n",
+  "section3": "<h2>contact</h2>\n\n<p>We&#39;d love to hear from you. If you have a question about us, or about working with us, or if you just want to find out more.</p>\n\n<p><a href=\"#\">Send us an Email</a></p>\n"
+}
