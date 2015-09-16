@@ -33,7 +33,25 @@
     "www": "export NODE_ENV=development; npm run assets && npm run watch && nodemon -e js,ejs,dot start.js"
   },
   "bundledDependencies": [
-    "page-home"
+    "page-home",
+    "page-adapter",
+    "page-article",
+    "page-articles",
+    "page-auth",
+    "page-auth-access",
+    "page-contact",
+    "page-error",
+    "page-filemanager",
+    "page-home",
+    "page-i18n",
+    "page-project",
+    "page-projects",
+    "page-translate",
+    "page-upload",
+    "widget-articles-featured",
+    "widget-menu",
+    "widget-projects-featured",
+    "wrap-layout"
   ],
   "dependencies": {
     "clone": "^1.0.2",
