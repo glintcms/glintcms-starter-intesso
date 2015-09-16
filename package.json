@@ -32,6 +32,7 @@
     "start-production": "export NODE_ENV=production; npm run build-production && node start",
     "www": "export NODE_ENV=development; npm run assets && npm run watch && nodemon -e js,ejs,dot start.js"
   },
+  "bundledDependencies": ["page-home"],
   "dependencies": {
     "clone": "^1.0.2",
     "compression": "^1.5.0",
