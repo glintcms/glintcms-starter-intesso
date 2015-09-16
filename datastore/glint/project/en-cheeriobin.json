@@ -6,19 +6,19 @@
     "title": "cheeriobin",
     "description": "cheeriobin | compare jQuery and cheerio results."
   },
-  "updatedAt": "2015-09-15T19:05:40.408Z",
+  "updatedAt": "2015-09-16T15:43:00.855Z",
   "createdAt": "2015-08-28T15:15:56.264Z",
   "id": "en-cheeriobin",
   "locale": "en",
   "path": "cheeriobin",
   "banner": {
-    "src": "/files/projects/cheeriobin/CheerioBin.png",
+    "src": "/files/projects/cheeriobin/cheeriobin.png",
     "alt": "CheerioBin Screenshot",
     "style": "width: 100%; margin: 0 auto; display: block;",
     "class": "fullscreen"
   },
   "teaser": {
-    "src": "/files/projects/cheeriobin/CheerioBin-small.png",
+    "src": "/files/projects/cheeriobin/cheeriobin-small.png",
     "alt": "JS banner",
     "style": "",
     "class": ""
