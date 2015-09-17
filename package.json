@@ -68,7 +68,7 @@
     "glint-adapter-elasticsearch": "^1.0.3",
     "glint-adapter-fs": "^1.0.5",
     "glint-block": "^1.0.2",
-    "glint-block-ckeditor": "^1.0.2",
+    "glint-block-ckeditor": "^1.0.4",
     "glint-block-image": "^1.0.2",
     "glint-block-image-attribute": "^1.0.2",
     "glint-block-markdown": "^1.0.2",
