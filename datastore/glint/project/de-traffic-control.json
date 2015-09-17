@@ -11,12 +11,12 @@
     "style": "width: 100%; margin: auto; display: block;",
     "class": ""
   },
-  "text": "<p>We build custom real time user interfaces, and system integration with management systems and low level hardware access.</p>\n\n<p>The Communication with the Server and the Traffic Control Systems is incredibly fast.</p>\n\n<p>&nbsp;</p>\n\n<h2>Features</h2>\n\n<p>- pure HTML5 solution&nbsp;/ no Plugins required!</p>\n\n<p>- Multi User Editing with Real Time Updates</p>\n\n<p>- Access Control</p>\n\n<p>- Scaleable</p>\n\n<p>- Reports</p>\n\n<p>- SVG Vector Graphics</p>\n\n<p>- Zoom /&nbsp;Pan</p>\n\n<p>- Image Editor&nbsp;</p>\n\n<p>- Build Process Integration</p>\n\n<p>- High performant Cache with real time invalidation</p>\n\n<p>- WebSockets with Fallback</p>\n\n<p>- Custom system Integration</p>\n\n<p>- Open RESTful&nbsp;Interfaces</p>\n\n<p>&nbsp;</p>\n\n<h2>Technology</h2>\n\n<p>- node.js</p>\n\n<p>- expressjs</p>\n\n<p>- redis</p>\n\n<p>- socket.io</p>\n\n<p>- ...</p>\n",
+  "text": "<p>We build custom real time user interfaces, and system integration with management systems and low level hardware access.</p>\n\n<p>The Communication with the Server and the Traffic Control Systems is incredibly fast.</p>\n\n<p>&nbsp;</p>\n\n<h2>Features</h2>\n\n<ul>\n\t<li>pure HTML5 solution&nbsp;/ no Plugins required!</li>\n\t<li>Multi User Editing with Real Time Updates</li>\n\t<li>Access Control</li>\n\t<li>Scaleable</li>\n\t<li>Reports</li>\n\t<li>SVG Vector Graphics</li>\n\t<li>Zoom /&nbsp;Pan</li>\n\t<li>Image Editor&nbsp;</li>\n\t<li>Build Process Integration</li>\n\t<li>High performant Cache with real time invalidation</li>\n\t<li>WebSockets with Fallback</li>\n\t<li>Custom system Integration</li>\n\t<li>Open RESTful&nbsp;Interfaces</li>\n</ul>\n\n<p>&nbsp;</p>\n\n<h2>Technology</h2>\n\n<ul>\n\t<li>node.js</li>\n\t<li>expressjs</li>\n\t<li>redis</li>\n\t<li>socket.io</li>\n\t<li>etc ...</li>\n</ul>\n",
   "meta": {
     "title": "Traffic Control System",
     "description": "Real Time System | Integration | User Interface"
   },
-  "updatedAt": "2015-09-15T19:10:32.993Z",
+  "updatedAt": "2015-09-17T10:16:49.763Z",
   "createdAt": "2015-09-02T20:29:57.837Z",
   "id": "de-traffic-control",
   "locale": "de",

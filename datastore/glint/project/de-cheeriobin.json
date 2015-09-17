@@ -1,12 +1,12 @@
 {
   "title": "CheerioBin",
   "short": "Developer Tool for comparing jQuery and cheerio",
-  "text": "<p><a href=\"http://github.com/cheeriojs/cheerio\">Cheerio</a>&nbsp;is a great server side module to run most of&nbsp;<a href=\"http://api.jquery.com/\">jQuery&#39;s</a>&nbsp;core functions on the node.js server. comparing the cheerio and jquery results can be tedious. with CheerioBin you can now run Cheerio and jQuery commands simultaneously, and compare the results.</p>\n\n<p>&nbsp;</p>\n\n<h2>Technology</h2>\n\n<p>- node.js</p>\n\n<p>- browserify</p>\n\n<p>-&nbsp;wzrd.in</p>\n\n<p>- cheerio</p>\n\n<p>- jQuery</p>\n\n<p>&nbsp;</p>\n\n<p><a href=\"http://www.cheeriobin.intesso.com/\">www.cheeriobin.intesso.com</a></p>\n",
+  "text": "<p><a href=\"http://github.com/cheeriojs/cheerio\">Cheerio</a>&nbsp;is a great server side module to run most of&nbsp;<a href=\"http://api.jquery.com/\">jQuery&#39;s</a>&nbsp;core functions on the node.js server. comparing the cheerio and jquery results can be tedious. with CheerioBin you can now run Cheerio and jQuery commands simultaneously, and compare the results.</p>\n\n<p>&nbsp;</p>\n\n<h2>Technology</h2>\n\n<ul>\n\t<li>node.js</li>\n\t<li>browserify</li>\n\t<li>wzrd.in</li>\n\t<li>cheerio</li>\n\t<li>jQuery</li>\n</ul>\n\n<p>&nbsp;</p>\n\n<p><a href=\"http://www.cheeriobin.intesso.com/\">www.cheeriobin.intesso.com</a></p>\n",
   "meta": {
     "title": "cheeriobin",
     "description": "cheeriobin | compare jQuery and cheerio results."
   },
-  "updatedAt": "2015-09-16T15:46:10.037Z",
+  "updatedAt": "2015-09-17T10:11:01.337Z",
   "createdAt": "2015-08-28T15:15:56.264Z",
   "id": "de-cheeriobin",
   "locale": "de",

@@ -11,12 +11,12 @@
     "style": "width: 100%; margin: auto; display: block;",
     "class": ""
   },
-  "text": "<p>No matter where in the world your or your customers devices are located,&nbsp;with Remote Access, you can access them when ever you want.</p>\n\n<p>&nbsp;</p>\n\n<h2>Architecture</h2>\n\n<p>The Remote Access Core uses the following generic and open protocol <em>(developed at intesso)</em>:</p>\n\n<p><a href=\"https://github.com/intesso/public-server\">https://github.com/intesso/public-server</a></p>\n\n<p><a href=\"https://github.com/intesso/hidden-server\">https://github.com/intesso/hidden-server</a></p>\n\n<p>&nbsp;</p>\n\n<p>The Service is then wrapped with a Security Layer, followed by the specific Functionality.</p>\n\n<p>&nbsp;</p>\n\n<h2>Features</h2>\n\n<p>- Secure Tunnel</p>\n\n<p>- Remote Update</p>\n\n<p>- Remote Debugging</p>\n\n<p>- Monitoring of remote Devices</p>\n\n<p>- Statistics / Analytics</p>\n\n<p>&nbsp;</p>\n\n<h2>Technology</h2>\n\n<p>- node.js</p>\n\n<p>- ssh / http / JSON / ...</p>\n",
+  "text": "<p>No matter where in the world your or your customers devices are located,&nbsp;with Remote Access, you can access them when ever you want.</p>\n\n<p>&nbsp;</p>\n\n<h2>Architecture</h2>\n\n<p>The Remote Access Core uses the following generic and open protocol&nbsp;<em>(developed at intesso)</em>:</p>\n\n<p><a href=\"https://github.com/intesso/public-server\">https://github.com/intesso/public-server</a></p>\n\n<p><a href=\"https://github.com/intesso/hidden-server\">https://github.com/intesso/hidden-server</a></p>\n\n<p>&nbsp;</p>\n\n<p>The Service is then wrapped with a Security Layer, followed by the specific Functionality based on the customers needs.</p>\n\n<p>&nbsp;</p>\n\n<h2>Features</h2>\n\n<ul>\n\t<li>Secure Tunnel (SSH, SFTP)</li>\n\t<li>Remote Update</li>\n\t<li>Remote Debugging</li>\n\t<li>Monitoring of remote Devices</li>\n\t<li>Statistics / Analytics</li>\n</ul>\n\n<p>&nbsp;</p>\n\n<h2>Technology</h2>\n\n<ul>\n\t<li>node.js</li>\n\t<li>ssh / http / JSON / ...</li>\n</ul>\n",
   "meta": {
     "title": "Remote Access",
     "description": "Access your Devices with Remote Access"
   },
-  "updatedAt": "2015-09-15T15:41:40.472Z",
+  "updatedAt": "2015-09-17T10:15:22.996Z",
   "createdAt": "2015-09-02T20:43:41.509Z",
   "id": "de-remote-access",
   "locale": "de",

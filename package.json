@@ -20,8 +20,7 @@
     ]
   },
   "scripts": {
-    "prepare": "ls public/build/ || mkdir public/build/",
-    "prepublish": "npm run prepare && ls -d1 $(pwd)/node_modules/{page,widget,wrap}-*/ | xargs -L 1 bash -c 'cd \"$0\" && pwd && npm install'",
+    "prepublish": "mkdir -p public/build/; ls -d1 $(pwd)/node_modules/{page,widget,wrap}-*/ | xargs -L 1 bash -c 'cd \"$0\" && pwd && npm install'",
     "link-glint": "export NODE_ENV=development && assets-bundler --src '../glint-*' --dest 'node_modules/glint-*'",
     "assets": "rm -rf public/assets/ && assets-bundler --src node_modules/:module/public --dest public/assets/:module",
     "build": "export NODE_ENV=development; npm run assets && browserify browser.js -o public/build/bundle.js --debug",
