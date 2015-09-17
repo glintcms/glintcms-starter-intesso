@@ -48,4 +48,18 @@ npm run build && node start
 # start with automatic restart on file changes
 npm run www
 
+# if you want to run it with a specific port
+export PORT=3000; npm run www
+
 ```
+
+This starter web site uses the filesystem as the storage adapter: `glint-adapter-fs`.
+
+Therefore you don't have to install a database to run it.
+
+
+# use
+1. open the website: [http://localhost:8080/](http://localhost:8080/)
+2. login via: [http://localhost:8080/login](http://localhost:8080/login)
+- user: `content@intesso.com`
+- password: `ContentContent`
