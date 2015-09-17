@@ -11,12 +11,12 @@
     "style": "width:100%; margin: auto; display: block;",
     "class": ""
   },
-  "text": "<p>With ComRouter, we can integrate&nbsp;text messages,&nbsp;voice calls and answering machines into the&nbsp;workflow of your application.</p>\n\n<p>&nbsp;</p>\n\n<h2>Technology</h2>\n\n<p>- node.js</p>\n\n<p>- twilio</p>\n\n<p>- bulksms</p>\n\n<p>&nbsp;</p>\n\n<p><a href=\"http://comrouter.intesso.com\">comrouter.intesso.com</a></p>\n\n<p>&nbsp;</p>\n",
+  "text": "<p>With ComRouter, we can integrate&nbsp;text messages,&nbsp;voice calls and answering machines into the&nbsp;workflow of your application.</p>\n\n<p>&nbsp;</p>\n\n<h2>Technology</h2>\n\n<ul>\n\t<li>node.js</li>\n\t<li>twilio</li>\n\t<li>bulksms</li>\n</ul>\n\n<p>&nbsp;</p>\n\n<p><a href=\"http://comrouter.intesso.com\">comrouter.intesso.com</a></p>\n\n<p>&nbsp;</p>\n",
   "meta": {
     "title": "comrouter",
     "description": "enabling and automating diverse communication"
   },
-  "updatedAt": "2015-09-15T19:06:13.261Z",
+  "updatedAt": "2015-09-16T20:42:02.253Z",
   "createdAt": "2015-09-02T19:34:12.229Z",
   "id": "en-comrouter",
   "locale": "en",

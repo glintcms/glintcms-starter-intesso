@@ -1,5 +1,6 @@
 {
-  "footer": "<p><a href=\"#\">Send Email</a> | +41 79 742 92 10</p>\n\n<p>intesso engineering gmbh</p>\n\n<p>Bahnhofstrasse 5 | 8447 Dachsen | Schweiz&nbsp;</p>\n",
+  "footer": "<p><a href=\"#\">Send Email</a> +41 79 742 92 10</p>\n\n<p>intesso engineering gmbh</p>\n\n<p>Bahnhofstrasse&nbsp;5 8447&nbsp;Dachsen</p>\n\n<p>Z&uuml;rich&nbsp;Schweiz</p>\n",
   "locale": "en",
-  "path": "layout"
+  "path": "layout",
+  "footnote": "<p>built with <a href=\"http://glintcms.com\">GlintCMS</a></p>\n"
 }
