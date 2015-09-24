@@ -68,9 +68,23 @@ Therefore you don't have to install a database to run it.
 
 # project structure
 
-- The directories `lib/*` contain the local modules for this starter project.
-- During `development`: These modules are symlinked into the `node_modules` directory, when running `npm run build` (using (assets-bundler)[https://github.com/intesso/assets-bundler])
-- In `production`: When running `npm run build-production` they are copied into the `node_modules` directory
+The directories `lib/*` contain the local modules for this starter project.
+These modules are like normal unpublished npm modules, that are just contained in this project. It does not really make sense to publish them because they are very project specific.
+
+The advantage to treat them as npm modules are:
+- They are self contained and have defined dependencies in the `package.json`.
+- It is easier to copy them into another project
+- It lets you avoid [deep relative links](https://github.com/substack/browserify-handbook#avoiding-)
+
+
+**During `development`**
+
+These modules are symlinked into the `node_modules` directory, when running `npm run build`
+
+
+**In `production`**
+
+When running `npm run build-production` they are copied into the `node_modules` directory
 
 
 
