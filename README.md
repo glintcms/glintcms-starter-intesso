@@ -14,7 +14,7 @@ It shows how you can use GlintCMS.
 
 make sure you have got [node.js](https://nodejs.org) installed on your system.
 
-so far it has only been tested with node 0.12.7 and 4.0.0 on mac os x and ubuntu 12.04 LTS.
+so far it has only been tested with node 0.12.7 and 4.x on mac os x and ubuntu 12.04 LTS.
 
 ```bash
 # for development, nodemon is helpful
