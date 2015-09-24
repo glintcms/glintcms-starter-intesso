@@ -68,7 +68,7 @@ Therefore you don't have to install a database to run it.
 
 # project structure
 
-The directories `lib/*` contain the local modules for this starter project.
+The directories `lib/*` contain the local modules [bundledDependencies](https://docs.npmjs.com/files/package.json#bundleddependencies) for this starter project.
 These modules are like normal unpublished npm modules, that are just contained in this project. It does not really make sense to publish them because they are very project specific.
 
 The advantage to treat them as npm modules are:
