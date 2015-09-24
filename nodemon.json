@@ -1,17 +1,13 @@
 {
   "verbose": true,
   "ignore": [
-    "public/",
-    "**/public",
-    "datastore/",
-    ".idea/",
-    "**/.idea/",
     ".git/",
-    "**/.git/",
-    "node_modules/**/node_modules/**",
-    "**/node_modules/**/node_modules/**",
-    "node_modules/.bin/",
-    "**/node_modules/.bin/",
+    ".idea/",
+    "public/",
+    "test/",
+    "datastore/",
+    "node_modules/",
+    "lib/**/node_modules/",
     "**/*.md",
     "**/*.json"
   ]

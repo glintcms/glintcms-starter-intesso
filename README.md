@@ -29,7 +29,7 @@ npm install -g nodemon
 you can install it with git clone (preferred):
 
     # change directory into the directory you want `glintcms-starter-intesso` to be created
-    git clone https://github.com/glintcms/glintcms-starter-intesso; cd glint-starter-intesso; npm install;
+    git clone https://github.com/glintcms/glintcms-starter-intesso; cd glint-starter-intesso; npm run prepublish; npm install;
 
 
 or via npm install:
@@ -59,7 +59,34 @@ Therefore you don't have to install a database to run it.
 
 
 # use
+
 1. open the website: [http://localhost:8080/](http://localhost:8080/)
 2. login via: [http://localhost:8080/login](http://localhost:8080/login)
 - user: `content@intesso.com`
 - password: `ContentContent`
+
+
+# project structure
+
+- The directories `lib/*` contain the local modules for this starter project.
+- During `development`: These modules are symlinked into the `node_modules` directory, when running `npm run build` (using (assets-bundler)[https://github.com/intesso/assets-bundler])
+- In `production`: When running `npm run build-production` they are copied into the `node_modules` directory
+
+
+
+# author
+
+Andi Neck | [@andineck](https://twitter.com/andineck) | andi.neck@intesso.com | intesso
+
+
+# get involved
+
+Any Feedback is highly appreciated.
+Please create an [Issue](https://github.com/glintcms/glintcms-starter-intesso/issues/new) or [PR](https://github.com/glintcms/glintcms-starter-intesso/pulls).
+I'm happy to add you as a comitter too.
+
+
+# license
+
+MIT
+
