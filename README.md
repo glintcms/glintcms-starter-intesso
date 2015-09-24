@@ -26,12 +26,10 @@ npm install -g nodemon
 > this starter installs a whole web site.
 > it's not just a module you would typically install inside an existing app.
 
-**standalone**
 you can install it with git clone (preferred):
 
     # change directory into the directory you want `glintcms-starter-intesso` to be created
-    git clone https://github.com/glintcms/glintcms-starter-intesso && cd glintcms-starter-intesso && npm run prepublish && npm install
-
+    git clone https://github.com/glintcms/glintcms-starter-intesso; cd glint-starter-intesso; npm run prepublish; npm install;
 
 
 or via npm install:
