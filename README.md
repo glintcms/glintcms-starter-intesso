@@ -48,12 +48,14 @@ cp -r node_modules/glintcms-starter-intesso/datastore/ datastore
 #### run
 
 > you can run it as a standalone application like this:
+
 ```javascript
 var glintcms = require('glintcms-starter-intesso');
 glintcms.listen(process.env.PORT || 3000);
 ```
 
 > or you can mount it into your web application:
+
 ```javascript
 var express = require('express');
 var app = express();
