@@ -21,7 +21,7 @@
   },
   "scripts": {
     "prepublish": "npm run link-local",
-    "version": "npm run build && git add -A public/build",
+    "version": "npm run assets && npm run build && git add -A public",
     "postversion": "git commit -m 'push version' && git push && git push --tags",
     "install-local": "ls -d1 $(pwd)/node_modules/{page,widget,wrap}-*/ | xargs -L 1 bash -c 'cd \"$0\" && pwd && npm install'",
     "install-linked": "find $(pwd)/node_modules -type l -maxdepth 1 | xargs -L 1 bash -c 'cd \"$0\" && pwd && npm install'",
@@ -35,9 +35,6 @@
     "www": "NODE_ENV=development && npm run assets && npm run watch && nodemon -e js,ejs,dot start.js",
     "start": "if [ -z $NODE_ENV ]; then NODE_ENV=production; fi; echo NODE_ENV=$NODE_ENV && npm run build && node start"
   },
-  "files": [
-    "public/build"
-  ],
   "bundledDependencies": [
     "page-home",
     "page-adapter",
