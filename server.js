@@ -89,15 +89,16 @@ app.use(pageProjects());
 app.use(pageContact());
 app.use(pageHome({place: 'server'})); // middleware order: must be after the other pages
 
-// TODO test access with userCan
 app.use(pageFilemanager());
 app.use(pageUpload());
 app.use(translate());
 
-app.use(function(req, res, next) {
-  console.log('no route');
-  next();
-});
+if (debug.enabled) {
+  app.use(function(req, res, next) {
+    debug('no route');
+    next();
+  });
+}
 
 app.use(function(err, req, res, next) {
   console.error('uncaught error', err);

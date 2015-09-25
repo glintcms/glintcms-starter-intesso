@@ -30,7 +30,7 @@ npm install -g nodemon
 you can install it with git clone (preferred):
 
     # change directory into the directory you want `glintcms-starter-intesso` to be created
-    git clone https://github.com/glintcms/glintcms-starter-intesso && cd glintcms-starter-intesso && npm run prepublish && npm install
+    git clone https://github.com/glintcms/glintcms-starter-intesso && cd glintcms-starter-intesso && npm run prepublish && npm install && npm run install-local
 
 
 
