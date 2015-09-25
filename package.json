@@ -1,6 +1,6 @@
 {
   "name": "glintcms-starter-intesso",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "server.js",
   "browser": "browser.js",
   "browserify": {
@@ -21,7 +21,7 @@
   },
   "scripts": {
     "prepublish": "npm run link-local",
-    "version": "npm run assets && npm run build && git add -A public",
+    "version": "NODE_ENV=production && npm run assets && npm run build && git add -A public",
     "postversion": "git commit -m 'push version' && git push && git push --tags",
     "install-local": "ls -d1 $(pwd)/node_modules/{page,widget,wrap}-*/ | xargs -L 1 bash -c 'cd \"$0\" && pwd && npm install'",
     "install-linked": "find $(pwd)/node_modules -type l -maxdepth 1 | xargs -L 1 bash -c 'cd \"$0\" && pwd && npm install'",
@@ -99,6 +99,7 @@
     "is-browser": "^2.0.1",
     "page": "git://github.com/intesso/page.js.git",
     "serve-favicon": "^2.2.0",
+    "subarg": "^1.0.0",
     "utils-merge": "^1.0.0"
   },
   "devDependencies": {
