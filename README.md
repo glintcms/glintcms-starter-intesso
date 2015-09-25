@@ -38,14 +38,11 @@ Therefore you don't have to install a database to run it.
 #### install
 
 ```bash
-
 # install in your app
 npm install glintcms-starter-intesso --save
 
 # copy the datastore into your app
 cp -r node_modules/glintcms-starter-intesso/datastore/ datastore
-
-
 ```
 
 #### run
@@ -132,7 +129,6 @@ These modules are symlinked into the `node_modules` directory, when running `npm
 **In `production`**
 
 When running `npm run build` they are copied into the `node_modules` directory
-
 
 
 # author
