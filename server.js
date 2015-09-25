@@ -109,3 +109,5 @@ app.use(function(err, req, res, next) {
 app.use(pageError()); // middleware order: at the very end
 
 module.exports = server;
+
+module.exports.app = app;

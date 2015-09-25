@@ -14,53 +14,98 @@ It shows how you can use GlintCMS.
 
 make sure you have got [node.js](https://nodejs.org) installed on your system.
 
-so far it has only been tested with node 0.12.7 and 4.x on mac os x and ubuntu 12.04 LTS.
+so far it has been tested with node 0.12.x and 4.x on mac os x and on ubuntu.
 
 ```bash
 # for development, nodemon is helpful
 npm install -g nodemon
 ```
 
-# install
+# use
 
-> this starter installs a whole web site.
-> it's not just a module you would typically install inside an existing app.
+this starter contains a whole web site including the data storage.
 
-**standalone**
-you can install it with git clone (preferred):
-
-    # change directory into the directory you want `glintcms-starter-intesso` to be created
-    git clone https://github.com/glintcms/glintcms-starter-intesso && cd glintcms-starter-intesso && npm run prepublish && npm install && npm run install-local
-
-
-
-or via npm install:
-
-    # NOTE: only run this command in an empty directory
-    npm install glintcms-starter-intesso; mv node_modules/* ./; cd glintcms-starter-intesso; npm install;
-
-
-# start
-
-```bash
-
-# build it and run it
-npm run build && node start
-
-# start with automatic restart on file changes
-npm run www
-
-# if you want to run it with a specific port
-export PORT=3000; npm run www
-
-```
-
-This starter web site uses the filesystem as the storage adapter: `glint-adapter-fs`.
+It uses the filesystem as the storage adapter: `glint-adapter-fs`.
 
 Therefore you don't have to install a database to run it.
 
 
-# use
+
+## npm module
+
+> you can install it as a module for your express or connect application.
+
+#### install
+
+```bash
+
+# install in your app
+npm install glintcms-starter-intesso --save
+
+# copy the datastore into your app
+cp -r node_modules/glintcms-starter-intesso/datastore/ datastore
+
+
+```
+
+#### run
+
+> you can run it as a standalone application like this:
+```javascript
+var glintcms = require('glintcms-starter-intesso');
+glintcms.listen(process.env.PORT || 3000);
+```
+
+> or you can mount it into your web application:
+```javascript
+var express = require('express');
+var app = express();
+var glintcms = require('glintcms-starter-intesso');
+
+app.get('/', function(req, res, next){
+  res.send('<h1>my new homepage</h1> check it out: <a href="/cms">GlintCMS</a>');
+});
+
+app.get('/cms', function(req, res, next){
+  req.url = '/';
+  next();
+});
+
+app.use(glintcms.app);
+
+app.listen(process.env.PORT || 3000);
+```
+
+
+
+## standalone
+
+> you can install it with git clone.
+> this is the preferred way, when you want to take it as a starting point to develop your own app with GlintCMS
+
+#### install
+
+```bash
+# change directory into the directory you want `glintcms-starter-intesso` to be created
+git clone https://github.com/glintcms/glintcms-starter-intesso && cd glintcms-starter-intesso
+npm run prepublish && npm install && npm run install-local
+```
+
+#### run
+
+```bash
+# build it and run it
+npm run build && node start
+
+# or start with automatic restart on file changes
+npm run www
+
+# if you want to run it with a specific port
+export PORT=3000; npm run www
+```
+
+
+# browse & edit
 
 1. open the website: [http://localhost:8080/](http://localhost:8080/)
 2. login via: [http://localhost:8080/login](http://localhost:8080/login)
@@ -86,7 +131,7 @@ These modules are symlinked into the `node_modules` directory, when running `npm
 
 **In `production`**
 
-When running `npm run build-production` they are copied into the `node_modules` directory
+When running `npm run build` they are copied into the `node_modules` directory
 
 
 
