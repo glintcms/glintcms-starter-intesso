@@ -1,6 +1,6 @@
 {
   "name": "glintcms-starter-intesso",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "main": "server.js",
   "browser": "browser.js",
   "browserify": {
@@ -31,8 +31,10 @@
     "assets": "rm -rf public/assets/ && assets-bundler --src node_modules/:module/public --dest public/assets/:module",
     "build": "npm run assets; if [ \"$NODE_ENV\" == \"development\" ]; then browserify browser.js -o public/build/bundle.js --debug; else browserify -t envify -g [ uglifyify -x '.js' --ignore '**/public/*' ] browser.js -o public/build/bundle.js; fi",
     "watch": "watchify -t [ envify purge ] -t [brfs] browser.js -o public/build/bundle.js --debug &",
-  "files": ["./", "build/new"],
-  "files": ["./", "build/new"],
+    "files": [
+      "./",
+      "build/new"
+    ],
     "minify": "cat public/build/bundle.js | uglifyjs -o public/build/bundle.min.js",
     "www": "export NODE_ENV=development && npm run assets && npm run watch && nodemon -e js,ejs,dot start.js",
     "start": "if [ -z $NODE_ENV ]; then NODE_ENV=production; fi; echo NODE_ENV=$NODE_ENV && npm run build && node start"
