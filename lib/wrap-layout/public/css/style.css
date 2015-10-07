@@ -11,7 +11,6 @@ body {
   font: 18px "Lucida Grande", Helvetica, Arial;
   background-color: rgba(255, 243, 222, 0.24);
   color: #63524A;
-  /*background-image: url(/assets/wrap-layout/bg.png);*/
 }
 
 a {
@@ -113,8 +112,6 @@ section ul li {
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  /*background-color: #660033;*/
-  /*border: 2px solid #660033;*/
 }
 
 a.link-inverse:visited {
@@ -123,7 +120,6 @@ a.link-inverse:visited {
 
 a.link-inverse:hover {
   text-decoration: none;
-  /*background-color: #ffffff;*/
   color: #222222;
 }
 
@@ -221,15 +217,15 @@ a.tagline:hover {
   background: inherit;
   z-index: -1;
 
-  filter: blur(10px) grayscale(50%);
   -moz-filter: blur(10px) grayscale(50%);
   -webkit-filter: blur(10px) grayscale(50%);
   -o-filter: blur(10px) grayscale(50%);
+  filter: blur(10px) grayscale(50%);
 
-  transition: all 2s linear;
   -moz-transition: all 2s linear;
   -webkit-transition: all 2s linear;
   -o-transition: all 2s linear;
+  transition: all 2s linear;
 }
 
 button.navbar-toggle {
