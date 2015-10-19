@@ -1,5 +1,5 @@
 // router
-var page = require('page');
+var page = require('page.js');
 
 // routes
 // auth is done completely on the server ;-)

@@ -25,16 +25,13 @@
     "init": "npm install assets-bundler && npm run prepublish && npm install && npm run install-local",
     "install-local": "ls -d1 $(pwd)/node_modules/{page,widget,wrap}-*/ | xargs -L 1 bash -c 'cd \"$0\" && pwd && npm install'",
     "install-linked": "find $(pwd)/node_modules -type l -maxdepth 1 | xargs -L 1 bash -c 'cd \"$0\" && pwd && npm install'",
-    "link-local": "assets-bundler --src './lib/*' --dest './node_modules/*'",
-    "link-glint": "assets-bundler --src '../glint-*' --dest 'node_modules/glint-*'",
+    "link-local": "assets-bundler --src './lib/*' --dest './node_modules/*' -rf",
+    "link-glint": "assets-bundler --src '../glint-*' --dest 'node_modules/glint-*' -rf",
     "cleanup": "rm -rf node_modules/ && rm -rf lib/*/node_modules/",
-    "assets": "rm -rf public/assets/ && assets-bundler --src node_modules/:module/public --dest public/assets/:module",
+    "assume-unchanged": "git update-index --assume-unchanged datastore/glint/role/7032a580-5c4e-11e5-b149-5bd68197214e.json; git update-index --assume-unchanged datastore/glint/user/7032a580-5c4e-11e5-b149-5bd68197214e.json",
+    "assets": "rm -rf public/assets/ && assets-bundler --src node_modules/:module/public --dest public/assets/:module -rf",
     "build": "npm run assets; if [ \"$NODE_ENV\" == \"development\" ]; then browserify browser.js -o public/build/bundle.js --debug; else browserify -t envify -g [ uglifyify -x '.js' --ignore '**/public/*' ] browser.js -o public/build/bundle.js; fi",
     "watch": "watchify -t [ envify purge ] -t [brfs] browser.js -o public/build/bundle.js --debug &",
-    "files": [
-      "./",
-      "build/new"
-    ],
     "minify": "cat public/build/bundle.js | uglifyjs -o public/build/bundle.min.js",
     "www": "export NODE_ENV=development && npm run assets && npm run watch && nodemon -e js,ejs,dot start.js",
     "start": "if [ -z $NODE_ENV ]; then NODE_ENV=production; fi; echo NODE_ENV=$NODE_ENV && npm run build && node start"
@@ -61,7 +58,7 @@
     "wrap-layout"
   ],
   "dependencies": {
-    "assets-bundler": "^1.1.0",
+    "assets-bundler": "^2.0.0",
     "clone": "^1.0.2",
     "compression": "^1.5.0",
     "connect-flash": "^0.1.1",
@@ -71,7 +68,7 @@
     "defaults": "^1.0.2",
     "dot": "^1.0.3",
     "ejs": "^2.3.4",
-    "express": "~4.11.1",
+    "express": "^4.13.3",
     "glint-adapter": "^1.0.3",
     "glint-adapter-ajax": "^1.0.3",
     "glint-adapter-elasticsearch": "^1.0.3",
@@ -101,7 +98,7 @@
     "glint-widget": "^1.0.2",
     "glint-wrap": "^1.0.2",
     "is-browser": "^2.0.1",
-    "page": "git://github.com/intesso/page.js.git",
+    "page.js": "^4.13.3",
     "serve-favicon": "^2.2.0",
     "subarg": "^1.0.0",
     "utils-merge": "^1.0.0"
