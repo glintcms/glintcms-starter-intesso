@@ -3,22 +3,6 @@
   "version": "1.1.11",
   "main": "server.js",
   "browser": "browser.js",
-  "browserify": {
-    "transform": [
-      [
-        "brfs"
-      ],
-      [
-        "envify",
-        {
-          "_": "purge"
-        }
-      ],
-      [
-        "uglifyify"
-      ]
-    ]
-  },
   "scripts": {
     "prepublish": "npm run link-local",
     "version": "NODE_ENV=production && npm run assets && npm run build",
@@ -30,9 +14,8 @@
     "cleanup": "rm -rf node_modules/ && rm -rf lib/*/node_modules/",
     "assume-unchanged": "git update-index --assume-unchanged datastore/glint/role/7032a580-5c4e-11e5-b149-5bd68197214e.json; git update-index --assume-unchanged datastore/glint/user/7032a580-5c4e-11e5-b149-5bd68197214e.json",
     "assets": "rm -rf public/assets/ && assets-bundler --src node_modules/:module/public --dest public/assets/:module -rf",
-    "build": "npm run assets; if [ \"$NODE_ENV\" == \"development\" ]; then browserify browser.js -o public/build/bundle.js --debug; else browserify -t envify -g [ uglifyify -x '.js' --ignore '**/public/*' ] browser.js -o public/build/bundle.js; fi",
+    "build": "npm run assets; if [ \"$NODE_ENV\" == \"development\" ]; then browserify browser.js -o public/build/bundle.js --debug; else browserify -p bundle-collapser/plugin -t envify -g [ uglifyify -x '.js' --ignore '**/public/*' ] browser.js -o public/build/bundle.js; fi",
     "watch": "watchify -t [ envify purge ] -t [brfs] browser.js -o public/build/bundle.js --debug &",
-    "minify": "cat public/build/bundle.js | uglifyjs -o public/build/bundle.min.js",
     "www": "export NODE_ENV=development && npm run assets && npm run watch && nodemon -e js,ejs,dot start.js",
     "start": "if [ -z $NODE_ENV ]; then NODE_ENV=production; fi; echo NODE_ENV=$NODE_ENV && npm run build && node start"
   },
@@ -106,6 +89,7 @@
   "devDependencies": {
     "brfs": "^1.3.0",
     "browserify": "^8.1.3",
+    "bundle-collapser": "^1.2.1",
     "envify": "^3.4.0",
     "tape": "^3.5.0",
     "uglifyify": "^3.0.1",
