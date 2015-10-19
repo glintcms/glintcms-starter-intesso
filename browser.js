@@ -1,26 +1,66 @@
-// router
+/*
+ * modules / dependencies
+ */
 var page = require('page.js');
+var PageConfig = require('page-config');
 
-// routes
-// auth is done completely on the server ;-)
-require('page-i18n')();
-require('page-article')();
-require('page-articles')();
-require('page-project')();
-require('page-projects')();
-require('page-contact')();
-require('page-filemanager')();
-require('page-upload')();
-require('page-translate')();
-require('page-home')();
+var PageFilemanager = require('page-filemanager');
+var PageUpload = require('page-upload');
+var PageTranslate = require('page-translate');
+var PageI18n = require('page-i18n');
 
-// initialize page.js router
-page({
-  click: false
-  //,dispatch: false
-  //,decodeURLComponents : false
-});
+var PageArticle = require('page-article');
+var PageArticles = require('page-articles');
+var PageProject = require('page-project');
+var PageProjects = require('page-projects');
+var PageContact = require('page-contact');
+var PageHome = require('page-home');
 
-// initialize socket.io communication
-//var io = window.io = require('glint-socket-io').io;
-//var socket = window.socket = require('glint-socket-io')();
+
+/*
+ * variables
+ */
+var root = !module.exports.length;
+
+/**
+ * glintcms application
+ *
+ * @param options Object
+ */
+module.exports = function glintcms(options) {
+
+  // get options
+  var o = PageConfig(options);
+
+  // routes
+  // auth is done completely on the server ;-)
+  PageFilemanager(o.filemanager);
+  PageUpload(o.upload);
+
+  // routes
+  // auth is done completely on the server ;-)
+  PageI18n(o.i18n);
+  PageArticle(o.article);
+  PageArticles(o.articles);
+  PageProject(o.project);
+  PageProjects(o.projects);
+  PageContact(o.contact);
+  PageFilemanager(o.filemanager);
+  PageUpload(o.upload);
+  PageTranslate(o.translate);
+  PageHome(o.home);
+
+  // initialize page.js router
+  page(o.browser || {
+      click: false,
+      dispatch: false,
+      decodeURLComponents: false
+    });
+
+  // initialize socket.io communication
+  //var io = window.io = require('glint-socket-io').io;
+  //var socket = window.socket = require('glint-socket-io')();
+
+};
+
+if (root) module.exports();

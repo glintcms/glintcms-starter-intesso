@@ -50,7 +50,8 @@ cp -r node_modules/glintcms-starter-intesso/datastore/ datastore
 > you can run it as a standalone application like this:
 
 ```javascript
-var glintcms = require('glintcms-starter-intesso');
+var options = {};
+var glintcms = require('glintcms-starter-glintcms')(options);
 glintcms.listen(process.env.PORT || 3000);
 ```
 
@@ -59,7 +60,8 @@ glintcms.listen(process.env.PORT || 3000);
 ```javascript
 var express = require('express');
 var app = express();
-var glintcms = require('glintcms-starter-intesso');
+var options = {};
+var glintcms = require('glintcms-starter-glintcms')(options);
 
 app.get('/', function(req, res, next){
   res.send('<h1>my new homepage</h1> check it out: <a href="/cms">GlintCMS</a>');
@@ -101,6 +103,9 @@ npm run www
 
 # if you want to run it with a specific port
 export PORT=3000; npm run www
+
+# start with specific options with the substack/subarg synthax
+node start.js --upload [ --get /up* ]
 ```
 
 
