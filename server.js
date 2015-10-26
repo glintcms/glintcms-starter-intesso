@@ -68,10 +68,7 @@ module.exports = function glintcms(options) {
   app.use(cookieParser(o.cookieParser));
 
   // the important stuff happens from here on! -> page routes
-  app.use(pageAuth(o.auth));  // middleware order: first page middleware
 
-  var access = pageAccess(o.access);
-  app.use(access); // middleware order: after pageAuth
 
   app.use(o.routes);
   app.use(pageIsBot(o.isBot));
@@ -87,6 +84,11 @@ module.exports = function glintcms(options) {
       //cookie: {domain: '.glint.localhost'}
     })
   );
+
+  app.use(pageAuth(o.auth));  // middleware order: first page middleware
+
+  var access = pageAccess(o.access);
+  app.use(access); // middleware order: after pageAuth
 
   if (debug.enabled) {
     app.use(function(req, res, next) {

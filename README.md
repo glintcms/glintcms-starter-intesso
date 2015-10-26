@@ -87,9 +87,12 @@ app.listen(process.env.PORT || 3000);
 #### install
 
 ```bash
-# change directory into the directory you want `glintcms-starter-intesso` to be created
-git clone https://github.com/glintcms/glintcms-starter-intesso && cd glintcms-starter-intesso
-npm run init
+# change directory into the directory you want `glintcms-starter-glintcms` to be created
+git clone https://github.com/glintcms/glintcms-starter-glintcms && cd glintcms-starter-glintcms
+# setup for production
+npm run setup
+# setup for development
+npm run setup-www
 ```
 
 #### run
@@ -98,7 +101,9 @@ npm run init
 # build it and run it
 npm run build && node start
 
-# or start with automatic restart on file changes
+# or build for development
+npm run build-www
+# and start with automatic restart on file changes
 npm run www
 
 # if you want to run it with a specific port
@@ -119,7 +124,7 @@ node start.js --upload [ --get /up* ]
 
 # project structure
 
-The directories `lib/*` contain the local modules [bundledDependencies](https://docs.npmjs.com/files/package.json#bundleddependencies) for this starter project.
+The directories `local_modules/*` contain the [local_modules](https://www.npmjs.com/package/local_modules) that are bundled with this starter project.
 These modules are like normal unpublished npm modules, that are just contained in this project. It does not really make sense to publish them because they are very project specific.
 
 The advantage to treat them as npm modules are:
@@ -130,13 +135,12 @@ The advantage to treat them as npm modules are:
 
 **During `development`**
 
-These modules are symlinked into the `node_modules` directory, when running `npm run build`
+These modules are symlinked into the `node_modules` directory, when running `npm run setup-www` or `local_modules link -f`
 
 
 **In `production`**
 
-When running `npm run build` they are copied into the `node_modules` directory
-
+When running `npm run setup` or `local_modules install -f` they are copied into the `node_modules` directory
 
 # author
 
