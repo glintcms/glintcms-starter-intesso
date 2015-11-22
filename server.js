@@ -64,15 +64,7 @@ module.exports = function glintcms(options) {
   app.use(flash(o.flash));
   app.use(cookieParser(o.cookieParser));
 
-  app.use(flash(o.flash));
-  app.use(cookieParser(o.cookieParser));
-
-  // the important stuff happens from here on! -> page routes
-
-
-  app.use(o.routes);
   app.use(pageIsBot(o.isBot));
-  app.use(pageAdapter.routes);
 
   app.use(i18n(o.i18n || {
       getLocaleFrom: 'subdomain,query,path,cookie,accept-language,default',
@@ -85,10 +77,16 @@ module.exports = function glintcms(options) {
     })
   );
 
-  app.use(pageAuth(o.auth));  // middleware order: first page middleware
+  // the important stuff happens from here on! -> page routes
+
+  var auth = pageAuth(o.auth);
+  app.use(auth.session);  // middleware order: first page middleware
 
   var access = pageAccess(o.access);
-  app.use(access); // middleware order: after pageAuth
+  app.use(access); // middleware order: after pageAuth session
+
+  app.use(auth.user);
+  app.use(auth.oauth);
 
   if (debug.enabled) {
     app.use(function(req, res, next) {
@@ -99,6 +97,9 @@ module.exports = function glintcms(options) {
       next();
     });
   }
+
+  app.use(o.routes);
+  app.use(pageAdapter.routes);
 
   app.use(pageArticle(o.article));
   app.use(pageArticles(o.articles));
