@@ -22,8 +22,8 @@ module.exports = function wrap(o) {
     .defaults({
       title: 'i18n-Translation',
       meta: {title: 'i18n-Translation'},
-      style: '/assets/page-translate/handsontable.css', // http://handsontable.com/bower_components/handsontable/dist/handsontable.full.js
-      script: '/assets/page-translate/handsontable.js' // http://handsontable.com/bower_components/handsontable/dist/handsontable.full.js
+      style: '/assets/page-translate/handsontable.full.min.css',
+      script: '/assets/page-translate/handsontable.full.min.js'
     })
     .series('content', contentWidget.place('force:server'))
     .series(LayoutWrap(o.layout).place('force:server'))
