@@ -1,6 +1,6 @@
 {
   "name": "glintcms-starter-intesso",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "main": "server.js",
   "browser": "browser.js",
   "scripts": {
