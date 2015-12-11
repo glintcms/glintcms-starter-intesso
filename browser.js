@@ -34,11 +34,6 @@ module.exports = function glintcms(options) {
 
   // routes
   // auth is done completely on the server ;-)
-  PageFilemanager(o.filemanager);
-  PageUpload(o.upload);
-
-  // routes
-  // auth is done completely on the server ;-)
   PageI18n(o.i18n);
   PageArticle(o.article);
   PageArticles(o.articles);
@@ -53,7 +48,7 @@ module.exports = function glintcms(options) {
   // initialize page.js router
   page(o.browser || {
       click: false,
-      dispatch: false,
+      dispatch: true,
       decodeURLComponents: false
     });
 
