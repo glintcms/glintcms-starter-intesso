@@ -5,6 +5,7 @@
 
 .runtime
 .idea
+.vscode
 
 # datastore default config
 datastore/glint/session/*

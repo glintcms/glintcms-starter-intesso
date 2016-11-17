@@ -15,7 +15,7 @@ var mixins = {
       var query = 'this.id.indexOf("__template__") === -1 && this.locale === "' + locale + '"';
       this.find({$where: query}, function(err, result) {
         result = result || [];
-        var filtered = Query.find(result, {}).sort({'updatedAt': 1}).limit(number).all();
+        var filtered = Query.find(result, {}).sort({'updatedAt': -1}).limit(number).all();
         return fn(err, {projects: filtered});
       });
     }

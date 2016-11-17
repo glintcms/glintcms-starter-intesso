@@ -1,0 +1,14 @@
+{
+  "title": "tidbits",
+  "short": "reflections on application design",
+  "text": "<p>by Andi Neck (<a href=\"https://twitter.com/andineck\">@andineck</a>)</p>\n\n<p>&nbsp;</p>\n\n<p>In a former article, Iain described how much time we spent, structuring the GlintCMS. While structuring helped us to tackle the complexity, it didn&#39;t feel completely right. We refactored it a couple of times and eventually realized that breaking things up into smaller pieces, helped us way more.&nbsp;</p>\n\n<p style=\"text-align: center;\">&nbsp;</p>\n\n<p style=\"text-align: center;\"># divide and conquer</p>\n\n<p style=\"text-align: center;\"># favour small and focused modules over big and even well structured applications</p>\n\n<p style=\"text-align: center;\"># define and follow your architectural style</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p style=\"text-align: center;\">Also read: <a href=\"https://github.com/glintapp/glintapp/blob/master/README.md\">GlintApp</a></p>\n\n<p style=\"text-align: center;\"><a href=\"https://github.com/glintapp/glintapp/blob/master/README.md\" style=\"background-color: rgba(255, 243, 222, 0.239216); text-decoration: underline; outline: 0px;\"><img alt=\"\" src=\"/files/articles/tidbits/glintapp-logo.png\" style=\"height:200px; width:200px\" /></a></p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n",
+  "id": "de-tidbits",
+  "updatedAt": "2015-09-01T21:23:33.489Z",
+  "createdAt": "2015-09-01T15:40:15.151Z",
+  "meta": {
+    "title": "glint cms",
+    "description": "the invisible cms"
+  },
+  "locale": "de",
+  "path": "tidbits"
+}

@@ -1,0 +1,14 @@
+{
+  "title": "An Introduction to Node.js",
+  "short": "At intesso we developed different applications with node.js and we want to share our experiences along this path.",
+  "text": "<p>by Andi Neck (<a href=\"https://twitter.com/andineck\">@andineck</a>)</p>\n\n<p>&nbsp;</p>\n\n<p>So here&#39;s a couple of reasons whe we still love node.js:</p>\n\n<p>&nbsp;</p>\n\n<blockquote>\n<p><a href=\"https://intesso.github.io/nodejs-introduction\">https://intesso.github.io/nodejs-introduction</a></p>\n</blockquote>\n\n<p>&nbsp;</p>\n\n<p>Hopefully this is helpful. Any feedback is welcome:&nbsp;<a href=\"https://twitter.com/andineck\">@andineck</a></p>\n\n<p>&nbsp;</p>\n",
+  "id": "en-an-introduction-to-nodejs",
+  "updatedAt": "2016-11-17T22:31:46.468Z",
+  "createdAt": "2016-11-16T15:40:15.151Z",
+  "meta": {
+    "title": "glint cms",
+    "description": "the invisible cms"
+  },
+  "locale": "en",
+  "path": "an-introduction-to-nodejs"
+}

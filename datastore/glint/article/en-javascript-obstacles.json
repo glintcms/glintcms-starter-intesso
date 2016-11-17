@@ -1,0 +1,14 @@
+{
+  "title": "Javascript Obstacles",
+  "short": "Javascript rules the world (wide web)",
+  "text": "<p>by Andi Neck (<a href=\"https://twitter.com/andineck\">@andineck</a>)</p>\n\n<p>&nbsp;</p>\n\n<p>I have a strong backround in Java (which is not related to JavaScript, except that it looks similar but isn&#39;t at all). Most problems I experienced while developing node.js applications actually were not so much node.js related but occurred because of lack of my understanding of JavaScript and functional programming in general. Therefore I put together a couple of obstacles we experienced with JavaScript so far:</p>\n\n<p>&nbsp;</p>\n\n<blockquote>\n<p><a href=\"https://intesso.github.io/javascript-obstacles\">https://intesso.github.io/javascript-obstacles</a></p>\n</blockquote>\n\n<p>&nbsp;</p>\n\n<p>Hopefully this is helpful. Any feedback is welcome:&nbsp;<a href=\"https://twitter.com/andineck\">@andineck</a></p>\n\n<p>&nbsp;</p>\n",
+  "id": "en-javascript-obstacles",
+  "updatedAt": "2015-12-22T22:39:57.865Z",
+  "createdAt": "2015-12-22T15:40:15.151Z",
+  "meta": {
+    "title": "",
+    "description": ""
+  },
+  "locale": "en",
+  "path": "javascript-obstacles"
+}
