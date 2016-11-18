@@ -274,9 +274,6 @@ footer {
   color: #ffffff;
   position: block;
   text-align: right;
-  bottom: 0;
-  left: 0;
-  right: 0;
   margin: 20px -50px 0 -50px;
   padding: 20px 30px;
   -webkit-transition: background .3s ease-in-out;
@@ -286,6 +283,7 @@ footer {
 
 footer.footer-fixed {
   position: fixed;
+  margin: 20px 0 0 0;
   bottom: 0;
   left: 0;
   right: 0;
