@@ -57,21 +57,16 @@ if (isBrowser) {
 
   //jQuery to collapse the navbar on scroll
   var scrolling = require('scrolling');
-  var $div = $("div");
   var $footer = $("footer");
   var $body = $('body');
   var $window = $(window);
 
   function display() {
-    var windowWidth = $window.width();
-    var windowHeight = $window.height();
-    var space = $window.height() - $footer.height();
-    var top = $div.offset().top;
-
-    if (top > 50 || space < 260) {
-      $footer.addClass("footer-hidden");
-    } else if (top < 40) {
-      $footer.removeClass("footer-hidden");
+    var space = $window.height() - $body.height() - $footer.height();
+    if (space > 5) {
+      $footer.addClass("footer-fixed");
+    } else {
+      $footer.removeClass("footer-fixed");
     }
   }
 

@@ -1,5 +1,5 @@
 {
-  "footer": "<p><a href=\"#\">Send Email</a> +41 79 742 92 10</p>\n\n<p>intesso engineering gmbh</p>\n\n<p>Bahnhofstrasse&nbsp;5 8447&nbsp;Dachsen</p>\n\n<p>Z&uuml;rich&nbsp;Schweiz</p>\n",
+  "footer": "<p><a href=\"#\">Send Email</a></p>\n\n<p><img alt=\"\" src=\"/files/contact.png\" style=\"height:29px; width:186px\" /></p>\n\n<p>+41 79 742 92 10</p>\n\n<p>intesso engineering gmbh</p>\n\n<p href=\"mailto:contact@intesso.com?subject=Inquiry&amp;body=Please%20contact%20me.\">Bahnhofstrasse&nbsp;5 CH-8447&nbsp;Dachsen</p>\n\n<p>Z&uuml;rich&nbsp;Schweiz</p>\n",
   "locale": "en",
   "path": "layout",
   "footnote": "<p>built with <a href=\"http://glintcms.com\">GlintCMS</a></p>\n"
